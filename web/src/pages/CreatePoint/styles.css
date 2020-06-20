@@ -1,0 +1,171 @@
+#page-create {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #EB7D16;
+  animation: logo-animation 5s infinite;
+}
+
+@keyframes logo-animation {
+  0% {
+    text-shadow: 1px 1px 4px #d66a17;
+  }
+  30% {
+    text-shadow: 1px 1px 4px #e9c6a6;
+  }
+  60% {
+    text-shadow: 1px 1px 4px #e9771a;
+  }
+  100% {
+    text-shadow: 1px 1px 4px #d66a17;
+  }
+}
+
+#page-create header {
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-create header a {
+  font-size: 20px;
+  color: #EB7D16;
+  text-decoration: none;
+
+  display: flex;
+  align-self: center;
+  transition: color 0.2s ease;
+}
+
+#page-create header a:hover {
+  color: #f0943f;
+}
+
+
+/* Formulário */
+#page-create form {
+  margin-top: 40px;
+}
+
+
+#page-create form fieldset {
+  border: none;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#page-create form fieldset span {
+  margin-top: 20px;
+  color: #f1f1f1;
+
+  display: block;
+}
+
+#page-create form fieldset .field label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+#page-create form fieldset .field input {
+  width: 100%;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #EB7D16;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto, "sans-serif";
+  padding-left: 5px;
+}
+
+#page-create form fieldset .field-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#page-create form fieldset .field-group .field {
+  width: 30%;
+}
+
+#page-create form fieldset .field-group select {
+  height: 40px;
+  width: 100%;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#page-create form fieldset .field-group select option {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Foods */
+#page-create form .foods {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#page-create form .foods .food {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  padding-bottom: 5px;
+  border: 2px solid #2ecc71;
+  cursor: pointer;
+  width: 130px;
+}
+
+#page-create form .foods .food img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#page-create form .foods .food p {
+  text-align: center;
+}
+
+#page-create form .foods .selected {
+  background-color: rgba(6, 233, 25, 0.4);
+}
+
+#page-create form .button {
+  margin: 40px auto;
+  background-color: #EB7D16;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 2px;
+  font-family: Ubuntu;
+  font-size: 20px;
+  cursor: pointer;
+
+  display: block;
+  height: 50px;
+  width: 250px;
+  transition: all 0.2s ease-in;
+}
+
+#page-create form .button:hover {
+  background-color: #f0f0f0;
+  color: #EB7D16;
+  border: 2px solid #EB7D16;
+}
